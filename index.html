@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Game Over</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Games site" />
+    <meta name="keywords" content="Game Over" />
+    <meta name="author" content="AISHA AHMED" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <section class="content">
+        <div class="img-wrapper"></div>
+        <header class="position-sticky top-0 z-2">
+            <div class="container ">
+                <nav id="navbar" class="navbar  navbar-expand-lg navbar-dark rounded-4 mb-5 mx-lg-5 mx-sm-3  p-2">
+                    <div class="container-fluid">
+                        <a class="navbar-brand d-flex align-items-center" href="#">
+                            <img src="images/logo-sm.png" alt="logo" class="d-inline-block align-text-top" width="40" height="40">
+                            <div class="ms-2">
+                                <h5 class="mb-0 fs-3 fw-bolder text-uppercase ">Game Reviews
+                                </h5>
+                            </div>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ms-auto bar">
+                                <li class="nav-item">
+                                    <a class="nav-link active fw-bold" data-category="mmorpg" href="#mmorpg">MMORPG</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-category="shooter" href="#shooter">SHOOTER</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-category="sailing" href="#sailing">SAILING</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-category="permadeath" href="#Photos">PERMADEATH</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-category="superhero" href="#superhero">SUPERHERO</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-category="pixel" href="#pixel">PIXEL</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </section>
+
+    <!-- display games Cards -->
+    <main>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 " id="cardContainer"
+                data-bs-theme="dark">
+            </div>
+        </div>
+    </main>
+
+    <!-- display Details game -->
+    <section class="bg-dark gameDetails text-white position-fixed top-0 w-100 min-vh-100 d-none z-3">
+        <div class="container">
+            <div class="d-flex my-3 mt-3 justify-content-between align-items-center">
+                <h2 class="fw-bolder text-warning fs-1">Game Details</h2>
+                <button id="btnClose" class="btn-close btn-close-white fw-light text-secondary"></button>
+            </div>
+            <div class="row" id="detailsContent"></div>
+        </div>
+    </section>
+
+    <!-- LOADING -->
+    <div class="loading d-none d-flex align-items-center justify-content-center">
+        <div class="loader">
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="container text-center">
+        <footer class="bg-blue text-white mt-5 p-3 rounded-4 mb-5 mx-sm-3 d-flex align-items-center justify-content-center">
+            <img src="images/logo-sm.png" alt="logo picture"  width="60" height="60">
+           <div>
+            <p class="mb-0 mt-1">© 2024 AishaBen. All rights reserved.</p>
+            <a href="#" class="text-decoration-none text-white">Privacy Policy</a> |
+            <a href="#" class="text-decoration-none text-white">Terms of Service</a>
+           </div>
+           
+           
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js" type="module"></script>
+</body>
+
+</html>

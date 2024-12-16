@@ -1,0 +1,177 @@
+/* ==================== General Styling ==================== */
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Comic Neue", cursive;
+  background-color: #262b30;
+}
+
+/* ==================== Utility Classes ==================== */
+.bg-blue {
+  background-color: #3A497B !important;
+  box-shadow: 0px 0px 13px 10px rgba(0, 0, 0, 0.35);
+}
+
+.nav-item {
+  margin-left: 10px !important;
+}
+
+.nav-link {
+  font-size: 15px;
+  font-weight: 400;
+  color: white !important;
+  transition-duration: 0.3s;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color: #0099cc !important;
+}
+
+/* ==================== Navigation Bar ==================== */
+nav {
+  background-color: #3A497B !important;
+  box-shadow: 0px 0px 13px 10px rgba(0, 0, 0, 0.35);
+}
+
+/* ==================== Background Styling ==================== */
+.img-wrapper {
+  background-image: url(../images/wraper.png);
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+}
+
+/* ==================== Cards ==================== */
+.card {
+  cursor: pointer;
+}
+
+.card .card-title > * {
+  font-size: 14px;
+}
+
+.card .card-footer > * {
+  font-size: 13px;
+}
+
+.card-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+
+.layer {
+  filter: grayscale(70%);
+  transition: 0.5s;
+}
+
+.layer:hover {
+  filter: grayscale(0);
+  transform: scale(1.04); 
+}
+
+/* ==================== Game Details ==================== */
+.textDescription {
+  line-height:1.5625rem;
+  text-align: justify;
+}
+
+/* ==================== Loading Spinner ==================== */
+.loading {
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background-color: rgba(39, 43, 48, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+}
+
+.loader {
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.loader::before,
+.loader::after {
+  content: "";
+  position: absolute;
+  border: 4px solid transparent;
+  border-top-color: #3A497B;
+  border-radius: 50%;
+  animation: spin 1.2s linear infinite;
+}
+
+.loader::before {
+  width: 100%;
+  height: 100%;
+  border-left-color: #dec210;
+  animation-duration: 1.2s;
+}
+
+.loader::after {
+  width: 70%;
+  height: 70%;
+  top: 15%;
+  left: 15%;
+  border-right-color: #b2ead6;
+  animation-duration: 0.5s;
+}
+
+@keyframes spin {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+/* ==================== Footer ==================== */
+footer {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+  text-align: center;
+  color: #6c757d;
+  font-size: 14px;
+}
+footer a {
+  color: #6c757d;
+  margin: 0 10px;
+  text-decoration: underline;
+}
+footer a:hover {
+  color: #029ED9;
+}
+/* ==================== Scroll bar ==================== */
+::-webkit-scrollbar {
+  width: 12px; 
+  height: 12px; 
+}
+
+::-webkit-scrollbar-track {
+  background: #262b30; 
+  border-radius: 10px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #3A497B, #0099cc); 
+  border-radius: 10px; 
+  border: 3px solid #262b30; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #0099cc, #dec210); 
+}
+
+::-webkit-scrollbar-corner {
+  background: #262b30; 
+}
+
+
+
